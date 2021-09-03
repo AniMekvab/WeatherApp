@@ -35,8 +35,6 @@
 		6348A09526E225A700729139 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348A09326E225A700729139 /* DefaultTheme.swift */; };
 		6348A09826E24B4200729139 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348A09726E24B4200729139 /* UIView.swift */; };
 		6348A09A26E24B8F00729139 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348A09926E24B8F00729139 /* ReusableView.swift */; };
-		6348A0A726E24E3600729139 /* TodayWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348A0A626E24E3600729139 /* TodayWeatherViewModel.swift */; };
-		6348A0A926E24E9100729139 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348A0A826E24E9100729139 /* TodayViewController.swift */; };
 		6348A0AE26E24EF400729139 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348A0AD26E24EF400729139 /* ForecastViewModel.swift */; };
 		6348A0B126E24F2200729139 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348A0AF26E24F2100729139 /* ForecastViewController.swift */; };
 		6348A0B426E24F9B00729139 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348A0B326E24F9B00729139 /* ForecastView.swift */; };
@@ -79,8 +77,6 @@
 		6348A09326E225A700729139 /* DefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
 		6348A09726E24B4200729139 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		6348A09926E24B8F00729139 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
-		6348A0A626E24E3600729139 /* TodayWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodayWeatherViewModel.swift; path = ../../../../../../Documents/TodayWeatherViewModel.swift; sourceTree = "<group>"; };
-		6348A0A826E24E9100729139 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodayViewController.swift; path = ../../../../../../Documents/TodayViewController.swift; sourceTree = "<group>"; };
 		6348A0AD26E24EF400729139 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		6348A0AF26E24F2100729139 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		6348A0B326E24F9B00729139 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
@@ -296,8 +292,6 @@
 		6348A09C26E24C2900729139 /* Today Weather */ = {
 			isa = PBXGroup;
 			children = (
-				6348A09F26E24C5600729139 /* ViewModels */,
-				6348A09E26E24C4B00729139 /* Controllers */,
 				6348A09D26E24C3C00729139 /* Views */,
 			);
 			path = "Today Weather";
@@ -310,22 +304,6 @@
 				6395C14726E2689200308DFD /* TodayView.xib */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		6348A09E26E24C4B00729139 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				6348A0A826E24E9100729139 /* TodayViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		6348A09F26E24C5600729139 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				6348A0A626E24E3600729139 /* TodayWeatherViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		6348A0AA26E24ECE00729139 /* ViewModels */ = {
@@ -497,7 +475,6 @@
 				6348A09A26E24B8F00729139 /* ReusableView.swift in Sources */,
 				6348A06326E21E2F00729139 /* CurrentWeather.swift in Sources */,
 				6348A06E26E21EEA00729139 /* Router.swift in Sources */,
-				6348A0A726E24E3600729139 /* TodayWeatherViewModel.swift in Sources */,
 				6348A07026E21F0300729139 /* TabBarRouter.swift in Sources */,
 				6348A04426E217C600729139 /* AppDelegate.swift in Sources */,
 				6348A07E26E2203600729139 /* WeeklyForecastResponse.swift in Sources */,
@@ -507,7 +484,6 @@
 				6348A06C26E21ECC00729139 /* LocationService.swift in Sources */,
 				6348A05E26E21DE600729139 /* ForecastCoordinator.swift in Sources */,
 				6348A07626E21F7700729139 /* NetworkManager.swift in Sources */,
-				6348A0A926E24E9100729139 /* TodayViewController.swift in Sources */,
 				6348A05926E21BD800729139 /* AppDependency.swift in Sources */,
 				6348A0B726E24FED00729139 /* DailyWeatherTableViewCell.swift in Sources */,
 				6348A06526E21E4E00729139 /* DailyWeather.swift in Sources */,
