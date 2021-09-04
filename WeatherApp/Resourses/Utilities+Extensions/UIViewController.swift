@@ -40,7 +40,11 @@ extension UIViewController {
         spinnerView.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0)
         
         let activityIndicator = UIActivityIndicatorView()
-        activityIndicator.style = .large
+        if #available(iOS 13.0, *) {
+            activityIndicator.style = .large
+        } else {
+            // Fallback on earlier versions
+        }
         activityIndicator.startAnimating()
         activityIndicator.center = CGPoint(x: view.center.x, y: view.center.y + offset)
         
