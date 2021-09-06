@@ -73,6 +73,7 @@ final class ForecastViewController: UIViewController {
     
     @objc func refresh(_ sender: UIRefreshControl) {
         self.requestCurrentLocation()
+        print(self.requestCurrentLocation())
     }
     
     private func registerCellForReuse() {

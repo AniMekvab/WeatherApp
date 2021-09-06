@@ -50,6 +50,7 @@ class TodayViewController: UIViewController {
         if viewModel == nil {
             indicator = showActivityIndicatory(onView: self.view)
             requestCurrentLocation()
+
         }
     }
     
@@ -61,6 +62,7 @@ class TodayViewController: UIViewController {
     public func requestCurrentLocation() {
         locationService.getLocation().done { location in
             self.placemark = location
+            print(self.placemark = location)
             self.requestWeather(for: location)
         }.ensure {
             guard let indicator = self.indicator else { return }
@@ -82,6 +84,7 @@ class TodayViewController: UIViewController {
             }
         }
     }
+    
     
     private func requestWeather(for location: CLPlacemark) {
         weatherService.getCurrentWeatherForecast(location: location).done { (weather) in

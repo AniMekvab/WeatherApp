@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -38,13 +39,13 @@
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fNn-Za-mca">
-                    <rect key="frame" x="144" y="246" width="126" height="318"/>
+                    <rect key="frame" x="138" y="246" width="138" height="315"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="current-location" translatesAutoresizingMaskIntoConstraints="NO" id="6CM-sA-6pS">
-                            <rect key="frame" x="0.0" y="153" width="12" height="12"/>
+                            <rect key="frame" x="0.0" y="151.5" width="12" height="12"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tbilisi, Georgia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zuw-pO-Z0n">
-                            <rect key="frame" x="20" y="149.5" width="106" height="19"/>
+                            <rect key="frame" x="20" y="147.5" width="118" height="20"/>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -52,19 +53,19 @@
                     </subviews>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20°C  |  Rain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDo-Be-8RB">
-                    <rect key="frame" x="91" y="576" width="232" height="23.5"/>
+                    <rect key="frame" x="91" y="573" width="232" height="24.5"/>
                     <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                     <color key="textColor" systemColor="systemBlueColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="5Cb-BX-Qoj">
-                    <rect key="frame" x="137" y="624.5" width="140" height="2"/>
+                    <rect key="frame" x="137" y="622.5" width="140" height="2"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="140" id="R7l-IK-7wr"/>
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="obo-aU-hgy" userLabel="Humidity Stack View">
-                    <rect key="frame" x="67" y="646.5" width="30" height="49.5"/>
+                    <rect key="frame" x="67" y="644.5" width="30" height="50.5"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humidity" translatesAutoresizingMaskIntoConstraints="NO" id="sa3-hg-5ie">
                             <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -74,7 +75,7 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TU-D9-Gzk">
-                            <rect key="frame" x="0.0" y="33" width="30" height="16.5"/>
+                            <rect key="frame" x="0.0" y="33" width="30" height="17.5"/>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -82,17 +83,17 @@
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="M9l-UE-msc" userLabel="Precipitation Stack View">
-                    <rect key="frame" x="183.5" y="646.5" width="47.5" height="49.5"/>
+                    <rect key="frame" x="181.5" y="644.5" width="51" height="50.5"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="precipitation" translatesAutoresizingMaskIntoConstraints="NO" id="drK-s0-Osx">
-                            <rect key="frame" x="8.5" y="0.0" width="30" height="30"/>
+                            <rect key="frame" x="10.5" y="0.0" width="30" height="30"/>
                             <color key="tintColor" systemColor="systemYellowColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="Oua-xe-yN3"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0 mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2J4-H6-Nao">
-                            <rect key="frame" x="0.0" y="33" width="47.5" height="16.5"/>
+                            <rect key="frame" x="0.0" y="33" width="51" height="17.5"/>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -100,7 +101,7 @@
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="65k-Gx-SCB" userLabel="Pressure Stack View">
-                    <rect key="frame" x="287.5" y="646.5" width="59.5" height="49.5"/>
+                    <rect key="frame" x="287.5" y="644.5" width="59.5" height="50.5"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pressure" translatesAutoresizingMaskIntoConstraints="NO" id="lqm-KV-zyp">
                             <rect key="frame" x="15" y="0.0" width="30" height="30"/>
@@ -110,7 +111,7 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1105 hPa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gb-Wn-UOv">
-                            <rect key="frame" x="0.0" y="33" width="59.5" height="16.5"/>
+                            <rect key="frame" x="0.0" y="33" width="59.5" height="17.5"/>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -118,10 +119,10 @@
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kRo-bs-n2o" userLabel="Wind Stack View">
-                    <rect key="frame" x="67" y="714" width="280" height="49.5"/>
+                    <rect key="frame" x="67" y="713" width="280" height="50.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="pbu-vD-ndk">
-                            <rect key="frame" x="0.0" y="0.0" width="140" height="49.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="140" height="50.5"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" translatesAutoresizingMaskIntoConstraints="NO" id="BYt-ID-RIO">
                                     <rect key="frame" x="55" y="0.0" width="30" height="30"/>
@@ -131,7 +132,7 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 km/h" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oA-jv-I5i">
-                                    <rect key="frame" x="44.5" y="33" width="51.5" height="16.5"/>
+                                    <rect key="frame" x="40.5" y="33" width="59" height="17.5"/>
                                     <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -139,7 +140,7 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="cbA-VI-cjz" userLabel="Wind Direction Stack View">
-                            <rect key="frame" x="140" y="0.0" width="140" height="49.5"/>
+                            <rect key="frame" x="140" y="0.0" width="140" height="50.5"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind-direction" translatesAutoresizingMaskIntoConstraints="NO" id="ggR-xf-uJv">
                                     <rect key="frame" x="55" y="0.0" width="30" height="30"/>
@@ -149,7 +150,7 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1m-W6-dsu">
-                                    <rect key="frame" x="61" y="33" width="18" height="16.5"/>
+                                    <rect key="frame" x="61" y="33" width="18.5" height="17.5"/>
                                     <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>

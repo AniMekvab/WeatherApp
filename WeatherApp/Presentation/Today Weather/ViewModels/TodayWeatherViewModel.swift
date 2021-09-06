@@ -27,10 +27,21 @@ public class TodayWeatherViewModel {
         return UIImage(named: weather.icon)
     }
     
+    
+    
     public var location: String {
-        guard let locality = place.locality, let country = place.country else { return "" }
+        
+        // Pod PromiseKit/CoreLocation არ ასაფორთებს ქართულ კონკრეტულ ლოკაციებს.
+        //[GEOAddressObject] [NSLocale currentLocale] failed for NSLocaleCountryCode@
+        //ქვემოთ დაკომენტარებულ კოდს მოაქვს კონკრეტული ლოკაცია თუმცა არა საქართველოში.
+        
+//        guard let locality = place.locality, let country = place.country else { return "" }
+                
+        guard let locality = place.administrativeArea, let country = place.isoCountryCode else { return "" }
         return "\(locality), \(country)"
     }
+    
+    
     
     public var temperature: String {
         return "\(String(format: "%.0f", weather.temperature)) °C | \(weather.title)"
@@ -71,7 +82,6 @@ extension TodayWeatherViewModel {
         view.curentLocationImage.isHidden = false
         
         view.weatherIconImage.image = weatherIcon
-        
         view.currentLocationLabel.text = location
         view.temperatureLabel.text = temperature
         view.humidityLabel.text = humidity
